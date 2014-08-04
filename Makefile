@@ -1,11 +1,5 @@
-TARGET := hello
-SRC := main.c
-
-all: $(TARGET)
-
-$(TARGET): $(SRC)
-	$(CC) $< -o $@
+compress_str: compress_str.c
+	cc $< -o $@
 
 clean:
-	rm $(TARGET)
-									
+	rm -f compress_str
